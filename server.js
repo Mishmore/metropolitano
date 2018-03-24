@@ -92,17 +92,15 @@ app.get('/express/:id', function (req, res) {
   }
 });
 
-app.get('/stations/:id/express', function (req, res) {
+app.get('/express/:id/stations', function (req, res) {
   const id = parseInt(req.params.id, 10);
-  const result = expressServices.filter((express) => {
-    let results = [];
-    express.stations.filter(function (station) {
-      if (station.id === id) {
-        results.push(express.stations);
-      }
-    });
+  const resultFilter = expressServices.filter(r => r.id === id)[0];
+  const results = [];
+  resultFilter.stations.forEach(function (express) {
+    results.push(stations.filter((station) => station.id === express.id)[0]);
     return results;
   });
+  const result = results;
 
   if (!result) {
     res.sendStatus(404);
