@@ -64,6 +64,18 @@ app.get('/stations/:id', function (req, res) {
   }
 });
 
+//Schedules
+app.get('/schedules/:name', function (req, res) {
+ const name = req.params.name;
+ const result = expressServices.filter(r => r.name == name);
+
+ if (!result) {
+   res.sendStatus(404);
+ } else {
+   res.send(result);
+ }
+});
+
 
 app.get('/express', function (req, res) {
   res.json(expressServices);
@@ -107,4 +119,3 @@ const server = app.listen(process.env.PORT || 3000, function () {
 
   console.log('listening at http://%s:%s', host, port);
 });
-
