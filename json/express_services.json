@@ -1,0 +1,447 @@
+{
+  "express_services": [
+    {
+      "id": 1,
+      "name": "1",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 32
+        },
+        {
+          "id": 36
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 20
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 30
+        },
+        {
+          "id": 33
+        },
+        {
+          "id": 34
+        },
+        {
+          "id": 35
+        },
+        {
+          "id": 37
+        },
+        {
+          "id": 38
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "1",
+      "category": "express",
+      "turn": "Tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 32
+        },
+        {
+          "id": 36
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 20
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 30
+        },
+        {
+          "id": 33
+        },
+        {
+          "id": 34
+        },
+        {
+          "id": 35
+        },
+        {
+          "id": 37
+        },
+        {
+          "id": 38
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "2",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 22
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 28
+        },
+        {
+          "id": 30
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "2",
+      "category": "express",
+      "turn": "Tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": []
+    },
+    {
+      "id": 5,
+      "name": "3",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id":
+        },
+        {
+          "id": 29
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 30
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "3",
+      "category": "express",
+      "turn": "Tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": []
+    },
+    {
+      "id": 7,
+      "name": "4",
+      "category": "express",
+      "turn": "Sábados",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 9
+        },
+        {
+          "id": 11
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 14
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 31
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "5",
+      "category": "express",
+      "turn": "",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 9
+        },
+        {
+          "id": 14
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 22
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 28
+        },
+        {
+          "id": 31
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "6",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 2
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 29
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "7",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 6
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 23
+
+        },
+        {
+          "id": 24
+
+        },
+        {
+          "id": 27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "8",
+      "category": "express",
+      "turn": "Solo tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 2
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 9
+        },
+        {
+          "id": 11
+        },
+        {
+          "id": 29
+        },
+        {
+          "id": 14
+        },
+        {
+          "id": 19
+        },
+        {
+          "id": 23
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        },
+        {
+          "id": 31
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "9",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 9
+        },
+        {
+          "id": 11
+        },
+        {
+          "id": 29
+        },
+        {
+          "id": 22
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 27
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "SX",
+      "category": "express",
+      "turn": "Mañana",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 25
+        },
+        {
+          "id": 24
+        },
+        {
+          "id": 28
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "SX",
+      "category": "express",
+      "turn": "Tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": []
+    },
+    {
+      "id": 15,
+      "name": "SXN",
+      "category": "express",
+      "turn": "Mañana Solo de Naranjal a Est. Cen.",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 13
+        },
+        {
+          "id": 14
+        },
+        {
+          "id": 19
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "SXN",
+      "category": "express",
+      "turn": "Tarde",
+      "schedule": "5:00 am a 9:20 am",
+      "stations": [
+        {
+          "id": 1
+        },
+        {
+          "id": 19
+        }
+      ]
+    }
+  ]
+}
