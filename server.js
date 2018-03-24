@@ -66,14 +66,14 @@ app.get('/stations/:id', function (req, res) {
 
 //Schedules
 app.get('/schedules/:name', function (req, res) {
- const name = req.params.name;
- const result = expressServices.filter(r => r.name == name);
+  const name = req.params.name;
+  const result = expressServices.filter(r => r.name == name);
 
- if (!result) {
-   res.sendStatus(404);
- } else {
-   res.send(result);
- }
+  if (!result) {
+    res.sendStatus(404);
+  } else {
+    res.send(result);
+  }
 });
 
 
@@ -101,6 +101,25 @@ app.get('/express/:id/stations', function (req, res) {
     return results;
   });
   const result = results;
+
+  if (!result) {
+    res.sendStatus(404);
+  } else {
+    res.send(result);
+  }
+});
+
+app.get('/express/:id/stations/:idStation', function (req, res) {
+  const id = parseInt(req.params.id, 10);
+  const idStation = parseInt(req.params.idStation, 10);
+  const resultFilter = expressServices.filter(r => r.id === id)[0];
+  const results = [];
+  resultFilter.stations.forEach(function (express) {
+    results.push(stations.filter((station) => station.id === express.id)[0]);
+    return results;
+  });
+
+  const result = results.filter(r => r.id === idStation)[0];
 
   if (!result) {
     res.sendStatus(404);
