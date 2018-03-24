@@ -15,6 +15,7 @@ app.get('/', function (req, res) {
 const districts = districtJson.districts;
 const stations = stationJson.stations;
 const expressServices = expressServicesJson.express_services;
+const mainExpress = mainExpressJson.main_express;
 
 app.get('/districts', function (req, res) {
   res.json(districts);
@@ -23,6 +24,21 @@ app.get('/districts', function (req, res) {
 app.get('/districts/:id', function (req, res) {
   const id = parseInt(req.params.id, 10);
   const result = districts.filter(r => r.id === id)[0];
+
+  if (!result) {
+    res.sendStatus(404);
+  } else {
+    res.send(result);
+  }
+});
+
+app.get('/main-express', function (req, res) {
+  res.json(mainExpress);
+});
+
+app.get('/main-express/:id', function (req, res) {
+  const id = parseInt(req.params.id, 10);
+  const result = mainExpress.filter(r => r.id === id)[0];
 
   if (!result) {
     res.sendStatus(404);
@@ -64,9 +80,17 @@ app.get('/express/:id', function (req, res) {
   }
 });
 
-app.get('/stations/express/:id', function (req, res) {
+app.get('/stations/:id/express', function (req, res) {
   const id = parseInt(req.params.id, 10);
-  const result = stations.filter(r => r.id === id)[0];
+  const result = expressServices.filter((express) => {
+    let results = [];
+    express.stations.filter(function (station) {
+      if (station.id === id) {
+        results.push(express.stations);
+      }
+    });
+    return results;
+  });
 
   if (!result) {
     res.sendStatus(404);
