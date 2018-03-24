@@ -1,6 +1,8 @@
 const express = require('express');
 const json = require('./json/districts.json');
 let app = express();
+app.use(express.static(__dirname + '/dist'));
+
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -25,10 +27,11 @@ app.get('/districts/:id', function (req, res) {
 });
 
 
-const server = app.listen(3000, function () {
+const server = app.listen(process.env.PORT || 3000, function () {
   let host = server.address().address;
   host = (host === '::' ? 'localhost' : host);
   const port = server.address().port;
 
   console.log('listening at http://%s:%s', host, port);
 });
+
