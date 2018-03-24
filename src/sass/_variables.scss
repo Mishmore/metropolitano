@@ -1,0 +1,40 @@
+/* Breakpoints */
+
+$mb-max: 23.438em !default; // 375px
+$xs-min: 23.400em !default; // 375px
+$xs-max: 47.938em !default; // 767px
+$sm-min: 48.000em !default; // 768px
+$sm-max: 63.938em !default; // 1024px
+$md-min: 64.000em !default; // 1025px
+$md-max: 74.938em !default; // approx 1199px
+$lg-min: 75.000em !default; // approx 1200px
+
+/* Colors */
+
+$light-grey:         #e5e3e3 !default;
+$dark-grey:          #323232 !default;
+$grey:               #adadad !default;
+$white:              #ffffff !default;
+$light-black:        #3b3b3b !default;
+$dark-white:         #f9f9f9;
+$black:              #211e1e;
+
+/* Background */
+
+$primary-background: $dark-white !default;
+
+/* Fonts */
+
+$lh-condensed-ultra: 1 !default;
+$lh-default: 1.2 !default;
+
+$font-weight-bold: 600 !default;
+$font-weight-light: 300 !default;
+
+/* Body */
+
+$body-background-color: $primary-background;
+$body-color: $black;
+$body-font-size: 16px !default;
+$body-line-height: $lh-default !default;
+$body-font : 'Source Sans Pro', sans-serif;
